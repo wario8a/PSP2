@@ -48,10 +48,10 @@ public class Main {
 	  StringBuilder result = new StringBuilder();
 	  result.append("PSP2 Calculo de Parametros Regresion Lineal!!!\n");
 		
-		/*for(int count = 1; count <= 4 ;count++){
-		
+		for(int count = 1; count <= 4 ;count++){
+			
 			result.append("Test" + count +":\n");			
-			LinkedList<String> linkedList = FileManager.ReadFile("D:\\ECOS\\Proyects\\PSP2\\src\\main\\java\\data\\test" + count +".txt");			
+			LinkedList<String> linkedList = FileManager.ReadFile("src\\main\\java\\data\\test" + count +".txt");			
 			double [] xvalues = ConvertListToArray(linkedList,0);
 			double [] yvalues = ConvertListToArray(linkedList,1);
 			
@@ -65,7 +65,7 @@ public class Main {
 			result.append("Calculo r: " +  correlation+ "\n");
 			result.append("Calculo r2: " +  Math.pow(correlation, 2)+ "\n");
 			result.append("Calculo Yk = 386: " + Yk + "\n");
-		}*/
+		}
 		return result;
   }
 }
